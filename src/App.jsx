@@ -2,7 +2,7 @@ import logoCsi from "./images/logo_csi.png";
 import reactLogo from "./images/react.svg";
 import viteLogo from "./images/vite.svg";
 import "./App.css";
-import TextoToImagen from "./textoToImagen";
+import TextoToImagen from "./misComponentes/textoToImagen";
 
 function App() {
 
