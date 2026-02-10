@@ -1,0 +1,151 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+}
+
+body {
+  background-color: #0f2a48aa;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.contenido {
+  font-size: 28px;
+}
+
+.imagenes img {
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.75s ease-in-out;
+  margin-top: 6px;
+}
+
+.imagenes {
+  transition: all 0.3s ease-in-out;
+  margin-top: -5px;
+  position: sticky;
+}
+
+.imagenes:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.imagenes img:hover {
+  transform: scale(1.25) rotate(360deg);
+}
+
+#selectImagenes {
+  padding: 4px;
+  width: 120px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px black;
+}
+
+#selectImagenes option {
+  height: 120px;
+  font-weight: 600;
+  background-color: rgb(21, 60, 96);
+}
+
+#textos {
+  display: flex;
+  user-select: none;
+  width: 120px;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#textos #fpie {
+  margin-left: 45px;
+}
+#textos *::placeholder {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  font-style: italic;
+  color:#888;
+}
+
+#textos input[type="text"]{
+  padding: 8px;
+  background-color: #120341;
+  border-radius: 8px;
+  border: none;
+  width: 220px;
+}
+
+#textos input[type="text"]:hover, #textos input[type="text"]:focus{
+  box-shadow: 0px 0px 8px rgb(126, 157, 199);
+}
+
+#btnBorrarCabecera, #btnBorrarPie {
+  cursor: pointer;
+  background-color: brown;
+  border: outset;
+  width: 24px;
+  transition: all 0.2s ease-in-out;
+  padding: 0;                /* Elimina el espacio interno que viene por defecto */
+  text-align: center;
+}
+
+#btnBorrarCabecera:active, #btnBorrarPie:active {
+  border: inset;
+  transform: scale(0.5);
+}
+
+#btnBorrarCabecera:hover, #btnBorrarPie:hover {
+  background-color: rgb(177, 73, 73);
+}
+
+#cabPie span {
+  background-color: rgba(218, 223, 224, 0.1);
+  padding: 4px;
+  border-radius: 8px;
+}
+
+#cabPie, body {
+  user-select: none;
+}
