@@ -98,7 +98,6 @@ function TextoToImagen() {
         btnExp.href = imagen;
         btnExp.target = "_blank"
         document.body.appendChild(btnExp);
-        alert(imagen)
         btnExp.click();
         document.body.removeChild(btnExp);
       }}>Exportar</button>
