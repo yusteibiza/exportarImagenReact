@@ -1,7 +1,7 @@
 import { useState } from "react";
-import logoCsi from "./images/logo_csi.png?url";
-import logoReact from "./images/react.svg?url";
-import logoVite from "./images/vite.svg?url";
+import logoCsi from "../images/logo_csi.png?url";
+import logoReact from "../images/react.svg?url";
+import logoVite from "../images/vite.svg?url";
 
 function TextoToImagen() {
   const [imagen, setImagen] = useState(logoCsi);
@@ -25,7 +25,7 @@ function TextoToImagen() {
       <br />
 
       <div id="cabPie">
-        <span>
+        <span style={{ visibility: cabecera === '' ? 'hidden' : 'visible' }}>
           {cabecera}
         </span>
 
@@ -39,7 +39,7 @@ function TextoToImagen() {
           />
         </div>
 
-        <span>
+        <span style={{ visibility: pie === '' ? 'hidden' : 'visible' }}>
           {pie}
         </span>
       </div>
@@ -50,6 +50,7 @@ function TextoToImagen() {
         <input
           onChange={(e) => {
             setCabecera(e.target.value);
+            OcultarTextos()
           }}
           type="text"
           id="cabecera"
@@ -74,6 +75,7 @@ function TextoToImagen() {
         <input
           onChange={(e) => {
             setPie(e.target.value);
+            OcultarTextos()
           }}
           type="text"
           id="pie"
